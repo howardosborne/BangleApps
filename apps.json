@@ -2420,5 +2420,31 @@
     {"name":"timer.app.js","url":"app.js"},
     {"name":"timer.img","url":"app-icon.js","evaluate":true}
   ]
+},
+{ "id": "sensor_display",
+  "name": "A sensor display",
+  "shortName":"sensor display",
+  "icon": "timer.png",
+  "version":"0.01",
+  "description": "This is an app to just display what sensors are showing",
+  "readme": "README.md",
+  "tags": "",
+  "storage": [
+    {"name":"sensor_display.app.js","url":"sensor_display.js"},
+    {"name":"timer.img","url":"app-icon.js","evaluate":true}
+  ]
+},
+{ "id": "playground",
+  "name": "My app's human readable name",
+  "shortName":"Short Name",
+  "icon": "app.png",
+  "version":"0.01",
+  "description": "A detailed description of my great app",
+  "tags": "",
+  "readme": "README.md",
+  "storage": [
+    {"name":"playground.app.js","url":"app.js"},
+    {"name":"playground.img","url":"app-icon.js","evaluate":true}
+  ]
 }
 ]
