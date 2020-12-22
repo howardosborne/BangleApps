@@ -1,10 +1,10 @@
 // Create an entry in apps.json as follows:
 { "id": "playground",
-  "name": "My app's human readable name",
-  "shortName":"Short Name",
+  "name": "My playground",
+  "shortName":"Playground",
   "icon": "app.png",
   "version":"0.01",
-  "description": "A detailed description of my great app",
+  "description": "My playground",
   "tags": "",
   "readme": "README.md",
   "storage": [
