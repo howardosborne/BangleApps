@@ -153,8 +153,17 @@ function drawBanner(text) {
   g.drawString(text, CX, CY);
 }
 
+function drawBigBanner(text) {
+  g.setFontAlign(0, 0, 0);
+  g.setColor(COLOR_BLACK);
+  g.fillRect(CX - 100, CY - 20, CX + 100, CY + 20);
+  g.setColor(COLOR_WHITE);
+  g.drawRect(CX - 99, CY - 19, CX + 99, CY + 19);
+  g.drawString(text, CX, CY);
+}
+
 function drawPaused() {
-  drawBanner("Get a new high score to show pin");
+  drawBigBanner("Get a new high score to show pin");
 }
 
 function drawGameOver() {
@@ -288,7 +297,7 @@ function startGame() {
   }
 
   gameOver = false;
-  newHighScore = false
+  newHighScore = false;
   points = 0;
   lines = 0;
   level = 0;

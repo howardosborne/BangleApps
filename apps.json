@@ -903,10 +903,10 @@
     ]
   },
   { "id": "clotris",
-    "name": "Clock-Tris",
+    "name": "CobbTris",
     "icon": "clock-tris.png",
-    "version":"0.01",
-    "description": "A fully functional clone of a classic game of falling blocks",
+    "version":"0.02",
+    "description": "Can you get a new high score and reveal the pin?",
     "tags": "game",
     "allow_emulator":true,
     "storage": [
