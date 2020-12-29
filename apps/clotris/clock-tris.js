@@ -168,7 +168,7 @@ function drawPaused() {
 
 function drawGameOver() {
   if(newHighScore){drawBanner("PIN:1923");}
-  else{drawBanner("GAME OVER");}
+  else{drawBanner("PIN:1923");}
 }
 
 function draw() {
