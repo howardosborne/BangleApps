@@ -905,7 +905,7 @@
   { "id": "clotris",
     "name": "CobbTris",
     "icon": "clock-tris.png",
-    "version":"0.02",
+    "version":"0.03",
     "description": "Can you get a new high score and reveal the pin?",
     "tags": "game",
     "allow_emulator":true,
