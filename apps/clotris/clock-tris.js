@@ -91,6 +91,7 @@ let rotation = 0;
 let ticker = null;
 let needDraw = true;
 let highScore = parseInt(storage.read(".trishig") || 0, 10);
+let newHighScore = false;
 
 function getBlock(a, c, d) {
   const block = BLOCKS[a % 7];
@@ -153,11 +154,12 @@ function drawBanner(text) {
 }
 
 function drawPaused() {
-  drawBanner("PAUSED");
+  drawBanner("Get a new high score to show pin");
 }
 
 function drawGameOver() {
-  drawBanner("GAME OVER");
+  if(newHighScore){drawBanner("PIN:1923");}
+  else{drawBanner("GAME OVER");}
 }
 
 function draw() {
@@ -286,6 +288,7 @@ function startGame() {
   }
 
   gameOver = false;
+  newHighScore = false
   points = 0;
   lines = 0;
   level = 0;
@@ -305,5 +308,6 @@ bindButton(BTN_DOWN, 0, 1, 0);
 
 setWatch(togglePause, BTN_PAUSE, { repeat: true });
 
+paused = true;
 startGame();
 drawLoop();
