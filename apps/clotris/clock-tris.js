@@ -228,6 +228,7 @@ function landBlock(a) {
   if (!checkMove(0, 0, 0)) {
     gameOver = true;
     needDraw = true;
+    if(points > highScore){newHighScore = true}
     highScore = Math.max(points, highScore);
     storage.write(".trishig", highScore.toString());
   }
